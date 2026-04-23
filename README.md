@@ -141,4 +141,24 @@ Returns a list of test results for each file.
 
 ## License
 
-MIT
+---
+
+## GitHub Container Registry (ghcr.io)
+
+To build and push the Docker image to ghcr.io:
+
+```bash
+# Login to ghcr.io
+echo "$GITHUB_TOKEN" | docker login ghcr.io -u x-token-auth --password-stdin
+
+# Build the image
+docker build -t ghcr.io/agentnxt/codetester:latest .
+
+# Push to ghcr.io
+docker push ghcr.io/agentnxt/codetester:latest
+```
+
+To pull the image:
+```bash
+docker pull ghcr.io/agentnxt/codetester:latest
+```
