@@ -145,7 +145,9 @@ Returns a list of test results for each file.
 
 ## GitHub Container Registry (ghcr.io)
 
-To build and push the Docker image to ghcr.io:
+> **Note**: Pushing to ghcr.io requires a GitHub token with `write:packages` scope.
+
+The Docker image can be built and pushed using GitHub Actions (see `.github/workflows/docker.yaml`) or manually:
 
 ```bash
 # Login to ghcr.io
@@ -156,6 +158,11 @@ docker build -t ghcr.io/agentnxt/codetester:latest .
 
 # Push to ghcr.io
 docker push ghcr.io/agentnxt/codetester:latest
+```
+
+Or use Docker Compose:
+```bash
+docker-compose -f docker-compose.yaml up --build
 ```
 
 To pull the image:
