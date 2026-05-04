@@ -4,6 +4,20 @@ An **AI-powered code testing agent** built with the GitHub Copilot SDK. CodeTest
 
 ---
 
+## 🎥 Demo
+
+### 🔹 CLI Demo
+
+![CLI Demo](./assets/demo-cli.gif)
+
+### 🔹 AI Fix Suggestions
+
+![AI Suggestions](./assets/demo-ai-fix.png)
+
+> 💡 Tip: Add your screenshots/GIFs inside an `assets/` folder in the repo.
+
+---
+
 ## ✨ Why CodeTester?
 
 Most tools stop at running tests. CodeTester goes further:
