@@ -97,9 +97,21 @@ Run tests + AI suggestions
 
 ## 🐳 Docker
 
+### Pull from Docker Hub
+
 ```bash
-docker pull ghcr.io/agentnxt/codetester:latest
+docker pull <dockerhub-username>/codetester:latest
 ```
+
+### Publish to Docker Hub (GitHub Actions)
+
+This repository includes `.github/workflows/publish-dockerhub.yml`.
+
+1. Add repository secrets:
+   - `DOCKERHUB_USERNAME`
+   - `DOCKERHUB_TOKEN` (Docker Hub access token)
+2. Push to `main` (publishes `latest`) or create a tag like `v1.0.0`.
+3. Or run **Publish Docker image to Docker Hub** manually from Actions.
 
 ---
 
